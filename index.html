@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Logiciel IA | Solution IA Caraïbes - Logiciels sur mesure</title>
+    <meta name="description" content="Conception, développement et déploiement de logiciels IA sur mesure par Solution IA Caraïbes.">
+    <!-- Police des titres : Space Grotesk (look tech/moderne) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN pour hébergement simple sur GitHub Pages) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Configuration de la palette personnalisée basée sur le logo
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            green: '#00E676',       // Vert vif du logo
+                            greenDark: '#00B359',   // Vert sombre pour le survol
+                            greenLight: '#E6FCD9',  // Fond vert très clair
+                            dark: '#0B0F19',        // Noir/Gris très sombre pour la typographie
+                            gray: '#64748B'         // Gris neutre pour le texte secondaire
+                        }
+                    },
+                    fontFamily: {
+                        display: ['"Sora"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!--
+        STATS DE VISITE — GoatCounter (gratuit, sans cookie, pas de bannière RGPD requise).
+        Remplacer MONCODE par le code de ton site une fois le compte créé sur https://www.goatcounter.com
+        (ex. si ton site s'appelle "monlogicielia" sur GoatCounter, l'URL est https://monlogicielia.goatcounter.com/count)
+    -->
+    <script data-goatcounter="https://MONCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+</head>
+<body class="bg-slate-50 text-brand-dark font-sans antialiased selection:bg-brand-green selection:text-brand-dark">
+
+    <!-- En-tête / Navigation (Fixe) -->
+    <header class="fixed top-0 w-full bg-white/90 backdrop-blur-md border-b border-slate-200/80 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
+            <!-- Nom dans le bandeau -->
+            <span class="font-display text-base sm:text-lg font-bold tracking-tight text-slate-900 uppercase">
+                MON LOGICIEL<span class="text-brand-green">-IA</span>
+            </span>
+
+            <a href="#contact" class="bg-slate-900 hover:bg-brand-green hover:text-slate-950 text-white text-sm sm:text-base font-semibold px-4 py-2 rounded-lg transition-all duration-200 shadow-sm">
+                Estimer mon projet IA
+            </a>
+        </div>
+    </header>
+
+    <!-- Section Hero (Layout 2 colonnes : Logo à gauche / Texte valorisé à droite) -->
+    <section class="pt-32 pb-16 px-4 sm:px-6 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+
+            <!-- Colonne Gauche : Logo -->
+            <div class="lg:col-span-5 flex justify-center lg:justify-start">
+                <img src="logo.png" alt="Mon Logiciel IA" class="w-full max-w-md h-auto object-contain drop-shadow-xl rounded-2xl">
+            </div>
+
+            <!-- Colonne Droite : Textes argumentés et Bouton d'action -->
+            <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+
+                <h1 class="font-display text-3xl sm:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
+                    Votre <span class="bg-gradient-to-r from-slate-900 to-brand-green bg-clip-text text-transparent">logiciel IA</span> sur mesure,<br>
+                    en local par conception.
+                </h1>
+
+                <!-- Explication commerciale différenciante : conception locale, confidentialité -->
+                <div class="space-y-4 text-slate-600 text-base sm:text-lg leading-relaxed">
+                    <p class="font-bold text-slate-900 text-lg sm:text-xl">
+                        La plupart des solutions IA exigent un cloud distant et une connexion permanente. Je conçois les miennes différemment.
+                    </p>
+                    <p>
+                        Chaque logiciel que je développe peut fonctionner <strong class="text-slate-800">entièrement en local, sans serveur distant et sans connexion internet</strong> — pas une promesse, un choix de conception. Pour les professions soumises au secret professionnel, vos données ne quittent jamais votre machine.
+                    </p>
+                    <p class="text-sm sm:text-base text-slate-500 bg-emerald-50/80 border-l-4 border-brand-green p-3 rounded-r-lg">
+                        💡 Bénéficier d'un logiciel en fonction de vos besoins, assisté par IA, c'est transformer vos problématiques en un avantage décisif.
+                    </p>
+                </div>
+
+                <div class="pt-2 flex justify-center lg:justify-start">
+                    <a href="#contact" class="inline-block bg-brand-green hover:bg-brand-greenDark text-slate-950 font-bold text-lg px-8 py-4 rounded-xl shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/30 transition-all duration-200">
+                        Estimer mon projet IA
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section Preuve : réalisation concrète -->
+    <section class="py-16 px-4 sm:px-6 bg-slate-900">
+        <div class="max-w-3xl mx-auto text-center">
+            <p class="text-brand-green font-bold uppercase tracking-wide text-sm mb-3">Déjà construit</p>
+            <h2 class="font-display text-2xl sm:text-3xl font-bold text-white mb-4">
+                <a href="https://www.sudolex.com/" target="_blank" rel="noopener" class="hover:text-brand-green transition-colors">SudoLex</a>
+            </h2>
+            <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+                Une intelligence juridique locale, bilingue français/néerlandais, conçue pour le marché de Sint Maarten, fonctionnant entièrement hors ligne. Pas un concept : un produit en cours de déploiement.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section Formulaire de Contact (Direct vers ton email via FormSubmit) -->
+    <section id="contact" class="py-16 px-4 sm:px-6 bg-slate-100/70 border-t border-slate-200">
+        <div class="max-w-2xl mx-auto bg-white border border-slate-200/80 rounded-2xl p-6 sm:p-10 shadow-xl shadow-slate-200/50">
+            <div class="mb-8 text-center">
+                <h2 class="font-display text-2xl sm:text-3xl font-bold text-slate-900">Décrivez votre besoin</h2>
+                <p class="mt-2 text-slate-600 text-sm sm:text-base">
+                    Remplissez ce formulaire pour nous expliquer vos attentes. Nous étudions la faisabilité et revenons vers vous avec une proposition.
+                </p>
+            </div>
+
+            <!-- Remplace "ton-email@domaine.com" par ton vrai email -->
+            <form action="https://formsubmit.co/ton-email@domaine.com" method="POST" class="space-y-6">
+
+                <!-- Anti-spam et configuration invisible -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <!-- Coordonnées -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label for="name" class="block text-sm font-semibold text-slate-700 mb-1.5">Nom & Prénom *</label>
+                        <input type="text" id="name" name="name" required class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-green focus:bg-white transition-all" placeholder="Ex: Jean Dupont">
+                    </div>
+                    <div>
+                        <label for="company" class="block text-sm font-semibold text-slate-700 mb-1.5">Société / Organisation <span class="text-xs font-normal text-slate-400">(facultatif)</span></label>
+                        <input type="text" id="company" name="company" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-green focus:bg-white transition-all" placeholder="Ex: Cabinet Dupont ou Particulier">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label for="email" class="block text-sm font-semibold text-slate-700 mb-1.5">Email *</label>
+                        <input type="email" id="email" name="email" required class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-green focus:bg-white transition-all" placeholder="jean@exemple.com">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-semibold text-slate-700 mb-1.5">Téléphone <span class="text-xs font-normal text-slate-400">(facultatif)</span></label>
+                        <input type="tel" id="phone" name="phone" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-green focus:bg-white transition-all" placeholder="06 12 34 56 78">
+                    </div>
+                </div>
+
+                <!-- Description du besoin métier -->
+                <div>
+                    <label for="message" class="block text-sm font-semibold text-slate-700 mb-1.5">Que souhaitez-vous que votre IA réalise ? *</label>
+                    <textarea id="message" name="message" rows="5" required class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-green focus:bg-white transition-all" placeholder="Exemple : Je voudrais un outil capable d'analyser mes flux de données, automatiser certaines tâches, ou traiter des cas spécifiques..."></textarea>
+                </div>
+
+                <!-- Délai -->
+                <div>
+                    <label for="timeline" class="block text-sm font-semibold text-slate-700 mb-1.5">Dans quel délai envisagez-vous ce projet ?</label>
+                    <select id="timeline" name="timeline" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-green focus:bg-white transition-all">
+                        <option value="Dès que possible">Dès que possible (&lt; 1 mois)</option>
+                        <option value="1 à 3 mois">Dans les 1 à 3 mois</option>
+                        <option value="Exploration">Simple étude de faisabilité / Exploration</option>
+                    </select>
+                </div>
+
+                <!-- Bouton Envoi -->
+                <button type="submit" class="w-full bg-slate-900 hover:bg-brand-green hover:text-slate-950 text-white font-bold py-3.5 rounded-lg shadow-md transition-all duration-200">
+                    Envoyer mon projet
+                </button>
+
+                <p class="text-xs text-center text-slate-500">
+                    * Informations confidentielles. Étude technique et retour sous 24h à 48h par Solution IA Caraïbes.
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Section Mentions légales -->
+    <section id="mentions-legales" class="py-16 px-4 sm:px-6 bg-white border-t border-slate-200">
+        <div class="max-w-2xl mx-auto text-sm text-slate-600 leading-relaxed space-y-4">
+            <h2 class="text-xl font-bold text-slate-900 mb-4">Mentions légales</h2>
+
+            <p>
+                <strong class="text-slate-800">Éditeur du site</strong><br>
+                Solution IA Caraïbes — micro-entreprise<br>
+                <!-- SIRET en attente de validation INPI (dépôt effectué le 16/10/2026) — remplacer dès réception -->
+                SIRET : XXXXXXXXXXX<br>
+                Adresse : 97150 Saint-Martin<br>
+                Directeur de la publication : Frédéric Legay
+            </p>
+
+            <p>
+                <strong class="text-slate-800">Contact</strong><br>
+                Pour toute question, utiliser le formulaire de contact ci-dessus.
+            </p>
+
+            <p>
+                <strong class="text-slate-800">Hébergement</strong><br>
+                Ce site est hébergé par GitHub, Inc. — 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis (service GitHub Pages).
+            </p>
+
+            <p>
+                <strong class="text-slate-800">Propriété intellectuelle</strong><br>
+                L'ensemble des contenus de ce site (textes, logo, mise en page) est la propriété de Solution IA Caraïbes, sauf mention contraire. Toute reproduction sans autorisation est interdite.
+            </p>
+
+            <p>
+                <strong class="text-slate-800">Données personnelles</strong><br>
+                Les informations transmises via le formulaire de contact (nom, email, téléphone le cas échéant, description du besoin) sont utilisées exclusivement pour répondre à votre demande et ne sont ni cédées ni vendues à des tiers. Elles sont traitées par le service FormSubmit pour l'acheminement de l'email, puis conservées par Solution IA Caraïbes pour la durée nécessaire au traitement de votre demande. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de ces données, à exercer via le formulaire de contact.
+            </p>
+
+            <p>
+                <strong class="text-slate-800">Cookies et mesure d'audience</strong><br>
+                Ce site utilise GoatCounter, un outil de mesure d'audience ne déposant pas de cookie et ne collectant aucune donnée personnelle identifiable, à seule fin de connaître la fréquentation du site (nombre de visites, pages consultées, type d'appareil).
+            </p>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="py-8 px-4 text-center text-xs text-slate-500 bg-white border-t border-slate-200">
+        <p><strong>monlogiciel-ia.com</strong> est un service édité par l'entreprise <strong>Solution IA Caraïbes</strong>.</p>
+        <p class="mt-2">
+            <a href="#mentions-legales" class="underline hover:text-brand-green">Mentions légales</a>
+        </p>
+        <p class="mt-2">Tous droits réservés &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
